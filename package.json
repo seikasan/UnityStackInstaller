@@ -4,7 +4,7 @@
   "displayName": "Unity Stack Installer",
   "description": "Editor-only installer for NuGetForUnity, VContainer, MessagePipe, UniTask, R3, ObservableCollections.R3, and ZLinq.",
   "unity": "6000.0",
-  "type": "tool",
+  "type": "module",
   "keywords": [
     "unity",
     "upm",
