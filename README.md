@@ -1,6 +1,6 @@
 # UnityStackInstaller
 
-NuGetForUnity, VContainer, MessagePipe, UniTask, R3, ObservableCollections.R3, ZLinq を入れる Package。
+[NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity), [VContainer](https://github.com/hadashiA/VContainer), [MessagePipe](https://github.com/Cysharp/MessagePipe), [UniTask](https://github.com/Cysharp/UniTask), [R3](https://github.com/Cysharp/R3), [ObservableCollections.R3](https://github.com/Cysharp/ObservableCollections), [ZLinq](https://github.com/Cysharp/ZLinq) を入れる Package。
 
 ## Package
 
