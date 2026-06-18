@@ -1,3 +1,1 @@
-# Unity generates these when this package is opened as a writable local package.
-# Keep metadata under package folders, but do not track root-level metadata noise.
-/*.meta
+
