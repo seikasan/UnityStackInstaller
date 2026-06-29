@@ -1,6 +1,6 @@
 {
-  "name": "Seikasan.UnityStackInstaller.Editor",
-  "rootNamespace": "Seikasan.UnityStackInstaller.Editor",
+  "name": "UnityStackInstaller.Editor",
+  "rootNamespace": "UnityStackInstaller.Editor",
   "references": [],
   "includePlatforms": [
     "Editor"

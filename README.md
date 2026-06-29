@@ -1,45 +1,53 @@
 # UnityStackInstaller
 
-[NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity), [VContainer](https://github.com/hadashiA/VContainer), [MessagePipe](https://github.com/Cysharp/MessagePipe), [UniTask](https://github.com/Cysharp/UniTask), [R3](https://github.com/Cysharp/R3), [ObservableCollections.R3](https://github.com/Cysharp/ObservableCollections), [ZLinq](https://github.com/Cysharp/ZLinq) を入れる Package。
+Unity Stack Installer.
 
-## Package
+[![license](https://img.shields.io/badge/LICENSE-MIT-green.svg)](LICENSE)
 
-Minimum Unity version: Unity 6 (`6000.0`)
+## 概要
 
-`com.seikasan.unity-stack-installer` は Editor 専用の UPM パッケージです。
+この Unity パッケージは、「私が」プロジェクトで共通して使用する依存関係を段階的にインストールします。
 
-依存一覧は `stack.json` に固定バージョンで定義しています。UPM は `Packages/manifest.json`、NuGet は NuGetForUnity 用の `Assets/packages.config` に分けて管理します。
+重要なのは、R3 と ZLinq は単なる Unity の Git パッケージではないという点です。これらを Unity にインストールするには、最初に NuGet パッケージを導入し、その後で Unity の Git パッケージを追加する必要があります。このインストーラーは、その順序に従って処理を行います。
 
-## 使い方
+## Unity Package Manager によってインストールされるもの
 
-Unity Editor のメニューから実行します。
+- VContainer
+- UniTask
+- MessagePipe
+- MessagePipe.VContainer
+- SerializeReference Extensions
+- ReactiveInputSystem
+- LitMotion
+- LitMotion.Animation
+- NuGetForUnity
+- R3.Unity
+- ZLinq.Unity
 
-- `Tools > Unity Stack Installer > Install`
-- `Tools > Unity Stack Installer > Verify`
-- `Tools > Unity Stack Installer > Repair`
+## NuGetForUnity によってインストールされるもの
 
-`Install` と `Repair` は不足している OpenUPM scope、UPM package、NuGet package だけを追加します。既に導入済みの依存は、`stack.json` とバージョンが違っていても上書きしません。バージョン差分は `Verify` の結果と Console に表示されます。
+- R3
+- ObservableCollections
+- ObservableCollections.R3
+- ZLinq
 
-## 固定バージョン
+## 使用方法
 
-`stack.json` の内容が唯一の定義元です。
+1. Window > Package ManagerからPackage Managerを開く
+2. 「+」ボタン > Add package from git URL
+3. 以下のURLを入力する
 
-UPM:
+```
+https://github.com/seikasan/UnityStackInstaller.git?path=UnityStackInstaller
+```
 
-- `com.github-glitchenzo.nugetforunity` `4.5.0`
-- `jp.hadashikick.vcontainer` `1.18.0`
-- `com.cysharp.messagepipe` `1.8.2`
-- `com.cysharp.unitask` `2.5.11`
+インストーラーは一度だけ自動的に実行されます。再実行する場合は、以下を使用してください。
 
-NuGet:
+`Tools > Unity Stack Installer > Install Packages`
 
-- `System.Threading.Tasks.Extensions` `4.5.4`
-- `Microsoft.Bcl.AsyncInterfaces` `8.0.0`
-- `Microsoft.Bcl.TimeProvider` `8.0.0`
-- `System.ComponentModel.Annotations` `5.0.0`
-- `System.Runtime.CompilerServices.Unsafe` `6.1.2`
-- `System.Threading.Channels` `8.0.0`
-- `ObservableCollections` `3.3.4`
-- `R3` `1.3.1`
-- `ObservableCollections.R3` `3.3.4`
-- `ZLinq` `1.5.6`
+以前のバージョンによってプロジェクトがすでに壊れた状態になっている場合は、`Packages/manifest.json` から `com.cysharp.r3` と `com.cysharp.zlinq` を削除し、Unity に依存関係を再解決させてから、このバージョンをインポートしてインストーラーを再実行してください。
+
+状態ファイルは以下です。
+
+- `ProjectSettings/UnityStackInstaller.state`
+- `ProjectSettings/UnityStackInstaller.installed`
