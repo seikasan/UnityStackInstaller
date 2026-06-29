@@ -12,24 +12,24 @@ Unity Stack Installer.
 
 ## Unity Package Manager によってインストールされるもの
 
-- VContainer
-- UniTask
-- MessagePipe
-- MessagePipe.VContainer
-- SerializeReference Extensions
-- ReactiveInputSystem
-- LitMotion
-- LitMotion.Animation
-- NuGetForUnity
-- R3.Unity
-- ZLinq.Unity
+- [VContainer](https://github.com/hadashiA/VContainer)
+- [UniTask](https://github.com/cysharp/unitask)
+- [MessagePipe](https://github.com/Cysharp/MessagePipe)
+- [MessagePipe.VContainer](https://github.com/Cysharp/MessagePipe)
+- [SerializeReference Extensions](https://github.com/mackysoft/Unity-SerializeReferenceExtensions)
+- [ReactiveInputSystem](https://github.com/nuskey8/ReactiveInputSystem)
+- [LitMotion](https://github.com/annulusgames/LitMotion)
+- [LitMotion.Animation](https://github.com/annulusgames/LitMotion)
+- [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
+- [R3.Unity](https://github.com/Cysharp/R3)
+- [ZLinq.Unity](https://github.com/Cysharp/ZLinq)
 
 ## NuGetForUnity によってインストールされるもの
 
-- R3
-- ObservableCollections
-- ObservableCollections.R3
-- ZLinq
+- [R3](https://github.com/Cysharp/R3)
+- [ObservableCollections](https://github.com/Cysharp/ObservableCollections)
+- [ObservableCollections.R3](https://github.com/Cysharp/ObservableCollections)
+- [ZLinq](https://github.com/Cysharp/ZLinq)
 
 ## 使用方法
 
