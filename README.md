@@ -17,12 +17,13 @@ Unity Stack Installer.
 - [MessagePipe](https://github.com/Cysharp/MessagePipe)
 - [MessagePipe.VContainer](https://github.com/Cysharp/MessagePipe)
 - [SerializeReference Extensions](https://github.com/mackysoft/Unity-SerializeReferenceExtensions)
-- [ReactiveInputSystem](https://github.com/nuskey8/ReactiveInputSystem)
+- [Reactive Input System](https://github.com/nuskey8/ReactiveInputSystem)
 - [LitMotion](https://github.com/annulusgames/LitMotion)
 - [LitMotion.Animation](https://github.com/annulusgames/LitMotion)
 - [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
 - [R3.Unity](https://github.com/Cysharp/R3)
 - [ZLinq.Unity](https://github.com/Cysharp/ZLinq)
+- [R3 Extensions](https://github.com/seikasan/MyExtensions)
 
 ## NuGetForUnity によってインストールされるもの
 

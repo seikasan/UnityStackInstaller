@@ -134,6 +134,10 @@ namespace UnityStackInstaller.Editor
             new PackageSpec(
                 "com.nuskey8.reactive-input-system",
                 "https://github.com/nuskey8/ReactiveInputSystem.git?path=Assets/ReactiveInputSystem"
+            ),
+            new PackageSpec(
+                "com.seikasan.com.seikasan.r3-extensions",
+                "https://github.com/seikasan/MyExtensions.git?path=R3"
             )
         };
 
