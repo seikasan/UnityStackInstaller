@@ -132,8 +132,8 @@ namespace UnityStackInstaller.Editor
         private static readonly PackageSpec[] DependentGitPackages =
         {
             new PackageSpec(
-                "com.nuskey8.reactive-input-system",
-                "https://github.com/nuskey8/ReactiveInputSystem.git?path=Assets/ReactiveInputSystem"
+                "com.seikasan.reactive-input-system",
+                "https://github.com/seikasan/ReactiveInputSystem.git?path=Assets/ReactiveInputSystem"
             ),
             new PackageSpec(
                 "com.seikasan.com.seikasan.r3-extensions",

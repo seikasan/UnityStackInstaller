@@ -1,6 +1,6 @@
 {
   "name": "com.seikasan.unity-stack-installer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "displayName": "Unity Stack Installer",
   "description": "Installs common Unity project packages in staged order, including NuGet packages required by R3 and ZLinq. Fixes NuGetForUnity reflection overload invocation.",
   "unity": "6000.3",
