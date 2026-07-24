@@ -132,11 +132,11 @@ namespace UnityStackInstaller.Editor
         private static readonly PackageSpec[] DependentGitPackages =
         {
             new PackageSpec(
-                "com.seikasan.reactive-input-system",
-                "https://github.com/seikasan/ReactiveInputSystem.git?path=Assets/ReactiveInputSystem"
+                "com.seikasan.input-system-r3-extensions",
+                "https://github.com/seikasan/MyExtensions.git?path=InputSystem.R3"
             ),
             new PackageSpec(
-                "com.seikasan.com.seikasan.r3-extensions",
+                "com.seikasan.r3-extensions",
                 "https://github.com/seikasan/MyExtensions.git?path=R3"
             )
         };
